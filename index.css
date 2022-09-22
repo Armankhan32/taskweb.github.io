@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+nav {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-one {
+
+
+    color: white;
+    height: 55px;
+    cursor: pointer;
+}
+
+
+
+
+
+.left>div:hover,
+.right>div:hover {
+    color: rgb(108, 7, 7);
+    transition: all 0.3s;
+}
+
+
+.navbartwo{
+    cursor: pointer;
+}
+
+.navbartwo ul li:hover{
+    color: #cc2233;
+    transition: all 0.3s;
+
+}
+
+
+
+
+
+
+
+
+.active {
+    color: rgb(141, 20, 20);
+}
+
+
+
+
+
+
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("heroImg.png") no-repeat center center / cover;
+    height: 100vh;
+
+
+
+
+}
+
+a {
+    font-size: 1rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-weight: 600;
+    
+
+
+}
+
+span {
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+a:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+.section1 {
+    position: absolute;
+    top: 48%;
+    left: 41.5%;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+
+
+
+.mide {
+    font-size: 20px;
+    font-weight: 200;
+    color: gray;
+    text-align-last: center;
+}
+
+
+.card{
+    
+    position: relative;
+    background-color: rgb(10, 9, 8) ;
+    width: 100%;
+    height: 349px;
+    border: none;
+    
+  }
+  .card1{
+    position: relative;
+    background-color: rgb(12, 11, 10) ;
+    width: 100%;
+    height: 349px; 
+    border: none;   
+  }
+  .thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    background: rgb(250, 242, 215);
+  }
+  .thecard:hover{
+   transform: rotateY(180deg);
+  }
+  .thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:rgb(248, 234, 236);
+    color: black;
+  }
+  .theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:rgb(248, 234, 236);
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+  .thecard1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.9s ease;
+    background:rgb(248, 234, 236);
+  }
+  .thecard1:hover{
+   transform: rotateY(180deg);
+  }
+
+
+  nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background:rgb(184, 183, 183);
+    
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+
+}
+
+
+
+
+.bg-image1 {
+    background: linear-gradient(rgba(248, 234, 236), rgba(0, 0, 0, 0.3)), url("formbg.jpg") no-repeat;
+    background-position: left;
+    width: 50%;
+    height: 700px;
+
+}
+
+
+
+
+
+.footer {
+    background-color: rgb(250, 254, 253);
+    padding: 20px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+
+#btnscroll-down {
+
+    position: absolute;
+
+    bottom: 5px;
+    right: 48%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(108, 7, 7);
+    border: 0px;
+    color: white;
+    font-size: 22px;
+
+
+
+}
+
+
+
+
+#btnScrollToTop {
+
+    position: fixed;
+    z-index: 1;
+
+    bottom: 25px;
+    right: 50px;
+    width: 37px;
+    height: 37px;
+
+    border-radius: 50%;
+    background-color: gray;
+
+
+    border: 0;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 12px;
+
+
+
+
+}
+
+
+#btnscrollToTop:active {
+    background-color: #cc2233;
+    color: white;
+}
+
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+}
+
+.img-container{
+    text-align: center;
+
+}
+
+
+
